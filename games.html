@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AETHER — GAMES</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         STARS
+    ========================= -->
+
+    <div class="stars" id="stars"></div>
+
+
+    <!-- =========================
+         CURSOR GLOW
+    ========================= -->
+
+    <div class="cursor-glow"></div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <header>
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <img
+                    src="AETHER-9-1-2026.png"
+                    alt="AETHER"
+                >
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    HOME
+                </a>
+
+                <a
+                    href="games.html"
+                    class="active"
+                >
+                    GAMES
+                </a>
+
+
+                <div class="discord-nav">
+
+                    <svg
+                        class="discord-icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            fill="currentColor"
+                            d="M19.54 5.34A16.9 16.9 0 0 0 15.7 4.15a.06.06 0 0 0-.06.03c-.17.3-.36.7-.5 1.02a15.6 15.6 0 0 0-4.28 0c-.14-.33-.34-.72-.51-1.02a.06.06 0 0 0-.06-.03 16.9 16.9 0 0 0-3.84 1.19.06.06 0 0 0-.03.02C4 8.8 3.33 12.16 3.66 15.48a.07.07 0 0 0 .03.05 16.9 16.9 0 0 0 5.18 2.6.06.06 0 0 0 .07-.02c.4-.55.75-1.12 1.05-1.72a.06.06 0 0 0-.03-.08 11.1 11.1 0 0 1-1.62-.77.06.06 0 0 1-.01-.1c.11-.08.22-.16.32-.24a.06.06 0 0 1 .06-.01c3.4 1.55 7.07 1.55 10.43 0a.06.06 0 0 1 .06.01c.1.08.21.16.32.24a.06.06 0 0 1-.01.1c-.52.3-1.06.56-1.62.77a.06.06 0 0 0-.03.08c.3.6.65 1.17 1.05 1.72a.06.06 0 0 0 .07.02 16.9 16.9 0 0 0 5.18-2.6.07.07 0 0 0 .03-.05c.39-3.84-.66-7.17-2.75-10.12a.05.05 0 0 0-.03-.02ZM8.68 13.61c-1.02 0-1.86-.94-1.86-2.1s.82-2.1 1.86-2.1c1.04 0 1.87.95 1.86 2.1 0 1.16-.82 2.1-1.86 2.1Zm6.66 0c-1.02 0-1.86-.94-1.86-2.1s.82-2.1 1.86-2.1c1.04 0 1.87.95 1.86 2.1 0 1.16-.82 2.1-1.86 2.1Z"
+                        />
+
+                    </svg>
+
+                    <span class="member-count">
+                        3,245
+                    </span>
+
+                    <span>
+                        DISCORD MEMBERS
+                    </span>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         GAMES PAGE
+    ========================= -->
+
+    <main class="games-page">
+
+        <div class="games-heading">
+
+            <span>
+                AETHER
+            </span>
+
+            <h1>
+                GAMES
+            </h1>
+
+            <p>
+                EXPLORE THE AETHER LIBRARY
+            </p>
+
+        </div>
+
+
+        <div class="games-grid" id="gamesGrid"></div>
+
+    </main>
+
+
+
+    <!-- =========================
+         SETTINGS BUTTON
+    ========================= -->
+
+    <button
+        class="settings-button"
+        id="settingsButton"
+        aria-label="Open settings"
+    >
+
+        <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+        >
+
+            <path
+                d="M19.43 12.98c.04-.32.07-.65.07-.98s-.02-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.37-.31-.6-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98L14.5 2.42C14.47 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.5.42L9.12 5.07c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.08-.48 0-.6.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.08.65-.08.98s.03.66.08.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.37.31.6.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.38-2.65c.61-.25 1.17-.58 1.69-.98l2.49 1c.23.08.48 0 .6-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5z"
+            />
+
+        </svg>
+
+    </button>
+
+
+    <script>
+
+        /* =========================
+           FALLING STARS
+        ========================= */
+
+        const stars =
+            document.getElementById("stars");
+
+        for (let i = 0; i < 45; i++) {
+
+            const star =
+                document.createElement("div");
+
+            star.className = "star";
+
+            const size =
+                Math.random() * 2 + 1;
+
+            star.style.width =
+                `${size}px`;
+
+            star.style.height =
+                `${size}px`;
+
+            star.style.left =
+                `${Math.random() * 100}%`;
+
+            star.style.top =
+                `${Math.random() * 100}%`;
+
+            star.style.animationDuration =
+                `${Math.random() * 4 + 3}s`;
+
+            star.style.animationDelay =
+                `${Math.random() * 5}s`;
+
+            stars.appendChild(star);
+
+        }
+
+
+        /* =========================
+           CURSOR GLOW
+        ========================= */
+
+        const glow =
+            document.querySelector(".cursor-glow");
+
+        document.addEventListener(
+            "mousemove",
+            (event) => {
+
+                glow.style.left =
+                    `${event.clientX}px`;
+
+                glow.style.top =
+                    `${event.clientY}px`;
+
+            }
+        );
+
+    </script>
+
+    <script>
+const games = [
+    {
+        name: "GAME 01",
+        image: "games/game1.png",
+        link: "games/game1.html"
+    },
+    {
+        name: "GAME 02",
+        image: "games/game2.png",
+        link: "games/game2.html"
+    },
+    {
+        name: "GAME 03",
+        image: "games/game3.png",
+        link: "games/game3.html"
+    },
+    {
+        name: "GAME 04",
+        image: "games/game4.png",
+        link: "games/game4.html"
+    },
+    {
+        name: "GAME 05",
+        image: "games/game5.png",
+        link: "games/game5.html"
+    },
+    {
+        name: "GAME 06",
+        image: "games/game6.png",
+        link: "games/game6.html"
+    },
+    {
+        name: "GAME 07",
+        image: "games/game7.png",
+        link: "games/game7.html"
+    },
+    {
+        name: "GAME 08",
+        image: "games/game8.png",
+        link: "games/game8.html"
+    },
+    {
+        name: "GAME 09",
+        image: "games/game9.png",
+        link: "games/game9.html"
+    },
+    {
+        name: "GAME 10",
+        image: "games/game10.png",
+        link: "games/game10.html"
+    }
+];
+
+const gamesGrid = document.getElementById("gamesGrid");
+
+games.forEach(game => {
+    const card = document.createElement("a");
+
+    card.className = "game-card";
+    card.href = game.link;
+
+    card.innerHTML = `
+        <div class="game-image">
+            <img src="${game.image}" alt="${game.name}">
+        </div>
+
+        <div class="game-info">
+            <h2>${game.name}</h2>
+        </div>
+    `;
+
+    gamesGrid.appendChild(card);
+});
+</script>
+
+</body>
+
+</html>
